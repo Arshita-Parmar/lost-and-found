@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+     body {
+            background-color: #f5f7ff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+/* ---------------------- NAVBAR ---------------------- */
+       
+          header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo i {
+            margin-right: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links i {
+            margin-right: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+
+    .signin-box {
+       /*  width: 350px;
+        background: #111;
+        padding: 35px;
+        border-radius: 18px;
+        border: 1px solid #444;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+        background:black;
+            width: 100%;
+            max-width: 450px;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 40px auto;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .signin-box h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .input-group {
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 6px;
+        border-radius: 8px;
+        border: 1px solid #555;
+        background: #222;
+        color: white;
+        font-size: 16px;
+    }
+
+    .input-group input:focus {
+        border-color: yellow;
+        outline: none;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background: yellow;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background: #f5e400;
+    }
+
+    .extra-links {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .extra-links a {
+        color: yellow;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .extra-links a:hover {
+        text-decoration: underline;
+    }
+
+
+    
+
+
+
+</style>
+
+</head>
+<body>
+
+     <!-- ---------------------- NAVIGATION BAR ---------------------- -->
+
+<header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-search-location"></i>
+                <span>Back2U</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search Items</a></li>
+                <li><a href="lost.html"><i class="fas fa-plus-circle"></i> Report Lost</a></li>
+                <li><a href="found.html"><i class="fas fa-hand-holding-heart"></i> Report Found</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="signin-box">
+    <h2>Sign In</h2>
+
+    <form>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <button class="btn" type="submit">Sign In</button>
+
+        <div class="extra-links">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don’t have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
